@@ -1,0 +1,14 @@
+server:
+  port: 8282
+
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+
+  application:
+    name: nodejs-consumer
+  main:
+    allow-bean-definition-overriding: true
+
