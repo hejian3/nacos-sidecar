@@ -5,13 +5,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class HelloController {
+public class PythonHelloController {
 
     @Autowired
-    private NodeClient nodeClient;
+    private PythonClient pythonClient;
 
-    @GetMapping("/hello")
+    @GetMapping("/python/hello")
     public String test() {
-        return nodeClient.hello();
+        return pythonClient.hello();
     }
 }

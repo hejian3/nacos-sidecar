@@ -11,6 +11,7 @@
         <module>sidecar-nodejs-consumer</module>
         <module>sidecar-python-provider</module>
         <module>sidecar-python-consumer</module>
+        <module>nacos-sidecar-gateway</module>
     </modules>
     <packaging>pom</packaging>
     <parent>

@@ -6,6 +6,7 @@ var path = require('path');
 var server = http.createServer(function(req, res) {
     // 获得请求的路径
     var pathname = url.parse(req.url).pathname;
+    console.log('listening on pathname = ' + pathname);
     res.writeHead(200, { 'Content-Type' : 'application/json; charset=utf-8' });
     // 访问http://localhost:8060/，将会返回{"index":"欢迎来到首页"}
     if (pathname === '/') {
